@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistemas de Informação</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>
+        $(document).ready(function(){
+            $('.parallax').parallax();
+        });
+        $(document).ready(function(){
+            carregaNoticias();
+            $('.modal').modal();
+        })
+   
+    </script>
+    <style>
+        #menu {
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper white accent-4" id="menu">
+            <a href="index.html" class="brand-logo black-text">SISTEMAS DE INFORMAÇÃO</a>  
+            <ul class="right">
+                <li><a href="#sobreocurso" class="modal-trigger black-text">SOBRE O CURSO</a></li>
+                <li><a href="#!" class="black-text">PROFESSORES</a></li>
+                <li><a href="#!" class="black-text">MERCADO DE TRABALHOS</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+    <div class="parallax-container">
+         <div class="parallax"><img src="imagem1.png"></div>
+    </div>
+    <div class="section purple">
+        <div class="row container">
+            <h2 class="header">Sistemas de Informação</h2>
+            <p class="black-text text-darken-3 lighten-3">Sistemas de Informação é o melhor curso da FACECA!</p>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="imagem2.jpg"></div>
+    </div>
+    <a name="sobreocurso"></a>
+    <div class="section yellow">
+        
+        <div class="row container">
+            <h2 class="header">Sobre o curso</h2>
+            <p class="black-text text-darken-3 lighten-3">Sistemas de Informação é o melhor curso da FACECA!</p>
+        </div>
+    </div>
+    <div class="parallax-container">
+            <div class="parallax"><img src="imagem3.jpg"></div>
+    </div>
+    <footer class="page-footer blue">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2018 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+          
+</body>
+</html>
