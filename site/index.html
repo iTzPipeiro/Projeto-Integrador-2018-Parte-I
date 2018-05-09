@@ -25,17 +25,38 @@
             padding-left: 5px;
         }
 
+        #paulocard {
+        	float: left;
+        	width: 321px;
+        }
+
+        #thiagocard {
+        	margin-left: 1px;
+        	float: left;
+        	width: 321px;
+        }
+
+        #marciocard {
+        	margin-left: 1px;
+        	float: left;
+        	width: 321px;
+        }
+
+        .card-content {
+        	height: 300px;
+        }
+
     </style>
 </head>
 <body>	
     <div class="navbar-fixed">    	
 	    <nav>
-	        <div class="nav-wrapper white accent-4" id="menu">
-	            <a href="index.html" class="brand-logo black-text">SISTEMAS DE INFORMAÇÃO</a>  
+	        <div class="nav-wrapper yellow accent-2" id="menu">
+	            <a href="index.html" class="brand-logo blue-text text-darken-3">SISTEMAS DE INFORMAÇÃO</a>  
 	            <ul class="right">
-	                <li><a href="#sobreocurso" class="modal-trigger black-text">SOBRE O CURSO</a></li>
-	                <li><a href="#corpodocente" class="black-text">CORPO DOCENTE</a></li>
-	                <li><a href="#mercadodetrabalho" class="black-text">MERCADO DE TRABALHO</a></li>
+	                <li><a href="#sobreocurso" class="modal-trigger blue-text text-darken-3">SOBRE O CURSO</a></li>
+	                <li><a href="#corpodocente" class="blue-text text-darken-3">CORPO DOCENTE</a></li>
+	                <li><a href="#mercadodetrabalho" class="blue-text text-darken-3">MERCADO DE TRABALHO</a></li>
 	            </ul>
 	        </div>
 	    </nav>
@@ -46,7 +67,7 @@
     <div class="parallax-container">
          <div class="parallax"><img src="imagens\faceca3.jpg"></div>
     </div>
-    <div class="section purple">
+    <div class="section white">
         <div class="row container">
             <h2 class="header">Sistemas de Informação</h2>
             <p class="black-text text-darken-3 lighten-3">Sistemas de Informação é o melhor curso da FACECA!</p>
@@ -59,7 +80,7 @@
         <div class="parallax"><img src="imagens\faceca5.jpg"></div>
     </div>
     <a name="sobreocurso"></a>
-    <div class="section yellow">  
+    <div class="section yellow accent-2">  
         <div class="row container">
             <h2 class="header">Sobre o curso</h2>
             <p class="black-text text-darken-3 lighten-3">Sistemas de Informação é o melhor curso da FACECA!</p>
@@ -100,15 +121,14 @@
         <div class="parallax"><img src="imagens\faceca3.jpg"></div>
     </div>
     <a name="corpodocente"></a>
-    <div class="section orange">  
+    <div class="section blue darken-3">  
         <div class="row container">
             <h2 class="header">Corpo Docente</h2>
-            <p class="black-text text-darken-3 lighten-3">Sistemas de Informação é o melhor curso da FACECA!</p>
             <div class="row">
-                <div class="col s12 m7">
-                    <div class="card horizontal">
+                <div class="col s12 m7" id="paulocard">
+                    <div class="card">
                         <div class="card-image">
-                            <img src="paulo.jpg">
+                            <img src="imagens/paulo.jpg">
                             <span class="card-title text-align: center">Paulo Roberto</span>
                         </div>
                         <div class="card-content">
@@ -124,10 +144,10 @@
                     </div>
                 </div>
 
-                <div class="col s12 m7">
-                    <div class="card horizontal">
+                <div class="col s12 m7" id="thiagocard">
+                    <div class="card">
                         <div class="card-image">
-                            <img src="thiago.jpg">
+                            <img src="imagens/thiago.jpg">
                             <span class="card-title text-align: center">Thiago Giovanella</span>
                         </div>
                         <div class="card-content">
@@ -143,10 +163,10 @@
                     </div>
                 </div>
 
-                <div class="col s12 m7">
-                    <div class="card horizontal">
+                <div class="col s12 m7" id="marciocard">
+                    <div class="card">
                         <div class="card-image">
-                            <img src="marcio.jpg">
+                            <img src="imagens/marcio.jpg">
                             <span class="card-title text-align: center">Márcio Henrique</span>
                         </div>
                         <div class="card-content">
@@ -172,7 +192,7 @@
         <div class="parallax"><img src="imagens\faceca5.jpg"></div>
     </div>
     <a name="mercadodetrabalho"></a>
-    <div class="section blue">  
+    <div class="section white">  
         <div class="row container">
             <h2 class="header">Mercado de Trabalho</h2>
             <p class="black-text text-darken-3 lighten-3">Sistemas de Informação é o melhor curso da FACECA!</p>
@@ -182,7 +202,10 @@
     <div class="parallax-container">
         <div class="parallax"><img src="imagens\faceca3.jpg"></div>
     </div>
-    <footer class="page-footer blue">
+
+    <!-- RODAPÉ -->
+    
+    <footer class="page-footer blue darken-3">
         <div class="container">
           <div class="row">
             <div class="col l6 s12">
