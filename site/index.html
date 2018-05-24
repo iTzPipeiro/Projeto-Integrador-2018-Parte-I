@@ -11,14 +11,8 @@
     <script>
         $(document).ready(function(){
             $('.parallax').parallax();
+            $('.dropdown-trigger').dropdown();
         });
-
-        /*
-        $(document).ready(function(){
-            carregaNoticias();
-            $('.modal').modal();
-        })
-        */
     </script>
     <style>
         #menu {
@@ -46,17 +40,32 @@
         	height: 300px;
         }
 
+        #cordenacaocard {
+            width: 800px;
+        }
+
+        .imgcord {
+            height: 450px;
+        }
+
     </style>
 </head>
 <body>	
-    <div class="navbar-fixed">    	
+    <div class="navbar-fixed">
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">three</a></li>
+        </ul>    	
 	    <nav>
 	        <div class="nav-wrapper white" id="menu">
 	            <a href="index.html" class="brand-logo blue-text text-darken-3">SISTEMAS DE INFORMAÇÃO</a>  
-	            <ul class="right">
+	            <ul class="right hide-on-med-and-down">
 	                <li><a href="#sobreocurso" class="modal-trigger blue-text text-darken-3">SOBRE O CURSO</a></li>
 	                <li><a href="#corpodocente" class="blue-text text-darken-3">CORPO DOCENTE</a></li>
 	                <li><a href="#mercadodetrabalho" class="blue-text text-darken-3">MERCADO DE TRABALHO</a></li>
+                    <li><a class="dropdown-trigger blue-text text-darken-3" href="#!" data-target="dropdown1">EXTRA<i class="material-icons right">arrow_drop_down</i></a></li>
 	            </ul>
 	        </div>
 	    </nav>
@@ -82,7 +91,7 @@
     <a name="sobreocurso"></a>
     <div class="section white">  
         <div class="row container">
-            <h2 class="header">Sobre o curso</h2>
+            <h2 class="header blue-text text-darken-3">Sobre o curso</h2>
             <p class="black-text text-darken-3 lighten-3">Sistemas de Informação é o melhor curso da FACECA!</p>
             	<li>
                     <strong>Modalidade:</strong> 
@@ -113,15 +122,15 @@
                     80
                 </li>
 
-                <h4 class="blue-text text-darken-3">A profissão</h4>
+                <h4 class="blue-text text-darken-3"><strong>A</strong> profissão</h4>
 
                 <p id="paprofissao">O Bacharel em Sistemas de Informação é responsável pela administração do fluxo de informações que circulam em Redes de Computadores em empresas. De acordo com as necessidades de cada empresa e seus usuários de tecnologia da informação, este profissional atua no desenvolvimento de softwares. Este profissional também cuida da funcionalidade de sites, garantindo que as informações possam ser acessadas de forma correta e organizada. O Analista de Sistemas também pode atuar na área de suporte técnico, realizando manutenções de sistemas, banco de dados e redes de computadores. Contudo, o profissional poderá atuar em empresas de diversos segmentos de negócios.</p>
 
-                <h4 class="blue-text text-darken-3">Mercado de Trabalho</h4>
+                <h4 class="blue-text text-darken-3"><strong>M</strong>ercado de Trabalho</h4>
 
                 <p id="pmercadodetrabalho">Hoje no Brasil o mercado para o profissional em Sistemas de Informação emprega 1,3 milhão de pessoas e, de acordo com a Associação Brasileira de Empresas de Tecnologia da Informação e Comunicação, 50 mil postos de trabalho estão esperando por um profissional qualificado. A expectativa é que nos próximos anos o Brasil vá precisar de mais de 750 mil profissionais de tecnologia. Afinal, a tecnologia da informação transformou nossos hábitos sociais, muitos serviços que antes realizávamos pessoalmente, hoje podemos executá-los através de sites e aplicativos. A tecnologia faz as pessoas resolverem problemas de formas diferentes, criativas, ou seja, inventando soluções.</p>
 
-                <h4 class="blue-text text-darken-3">Por que estudar na Faceca?</h4>
+                <h4 class="blue-text text-darken-3"><strong>P</strong>or que estudar na Faceca?</h4>
 
                 <p>- Temos o melhor Corpo docente da Região: O corpo docente da Faceca é composto por mestres e doutores atuantes no mercado de trabalho e com vasta experiência profissional.</p>
 
@@ -152,6 +161,70 @@
                 <p>- Temos também, parceria com diversas empresas, câmara municipais, associações comerciais e órgãos públicos com a finalidade de oportunizar descontos e benefícios exclusivos.</p>
 
                 <p>Faceca a faculdade que acredita no ser!</p>
+
+                <h4 class="blue-text text-darken-3"><strong>C</strong>ordenação do Curso</h4>
+
+                <div class="row">
+                    <div class="col s12 m7" id="cordenacaocard">
+                      <div class="card horizontal">
+                        <div class="card-image">
+                          <img src="imagens/paulo.jpg" class="imgcord">
+                          <span class="card-title">Paulo Roberto</span>
+                        </div>
+                        <div class="card-content">
+                          <p id="pcordenacao">Olá! Sou Paulo Roberto Moreira Mendes e atuo no curso de Sistemas de Informação como Coordenador e Docente. Sou formado em Sistemas de Informação pela CNEC/FACECA. Fiz pós-graduação em Redes de Computadores e estou Mestrando em Ciências da Linguagem pela UNIVÁS. Atuei nas empresas Américo Contabilidade como Analista de Suporte e Administrador de Redes de Computadores. Presto consultoria em Tecnologia da Informação principalmente em escritórios contábeis em nossa região.<br>
+                          Caso queira falar comigo estou na instituição nos seguintes dias:
+                          <br>
+                          <li>Segunda-Feira: 19h as 21h</li>
+                          
+                          <li>Terça-Feira: 17h as 19h</li>
+                          
+                          <li>Quarta-Feira: 20h40 as 22h</li>
+                          
+                          <li>Quinta-Feira: 18h as 19h e 20h40 as 22h</li>
+                          
+                          <li>Sexta-Feira: 19h as 21h</li>
+                          
+                          Você pode agendar para falar comigo pessoalmente ou tirar dúvidas pelos seguintes contatos:
+                          <br>  
+                          <strong>E-mail:</strong> 1916.paulomendes@cnec.br
+                          <br>
+                          <strong>Telefone:</strong> (35) 3690-8926
+                          <br>
+                          <strong>Whatsapp:</strong> (35) 9 99881-8597
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <h4 class="blue-text text-darken-3"><strong>C</strong>omo faço para Ingressar na Faceca?</h4>
+                <p>Para maiores informações sobre como ingressar na Faceca, acesse <a href="http://faceca.cnec.br/informacoes/formas-de-ingresso/">FORMAS DE INGRESSO</a></p>
+
+                <h4 class="blue-text text-darken-3"><strong>E</strong>strutura Curricular</h4>
+                <p>As estruturas curriculares dos cursos Superiores de Tecnologia e Graduação, estão em consonância com o Catálogo Nacional de Cursos Superiores de Tecnologia e com Diretrizes Curriculares Nacionais.
+                <br>
+                <a href="http://faceca.cnec.br/wp-content/uploads/sites/19/2015/05/Estrutura-Curricular-Sistemas-de-Informa%C3%A7%C3%A3o.pdf">Clique aqui</a> para acessar a estrutura curricular deste curso.</p>
+
+                <h4 class="blue-text text-darken-3"><strong>E</strong>strutura Física</h4>
+                <p>A FACECA dispõe de estrutura própria que possibilita a aplicação da teoria vivenciada em sala de aula às experiências práticas que sustentam uma atuação de excelência no mercado de trabalho. A Biblioteca de nossa Instituição é uma das melhores do Sul de Minas e recebeu conceito 5 na última avaliação do MEC. A estrutura conta também com 5 laboratórios de informática, Laboratórios de Química, Física, Eletricidade Aplicada, Segurança do Trabalho, Núcleo Contábil de apoio tributário, fiscal e contábil à Sociedade. Núcleo de Práticas Jurídicas, Escritório de Assistência Jurídica à Comunidade. É a única instituição do Sul de Minas que sedia o Centro Judiciário de Solução de Conflitos em parceria com o TJMG e o Conselho Regional de Administração, parceria que oportunizou a criação da Agência de Empregos vinculada ao CRA e Casa do Administrador.</p>
+                <p>No curso de Sistemas de Informação temos disponível um laboratório exclusivo de Redes de Computadores, que dispõe de ferramentas para suportar as disciplinas de Redes de Computadores, Sistemas Distribuídos, Sistemas Operacionais e Auditoria e Segurança de Sistemas. A Instituição possui além disso uma parceria com a Embarcadero/Delphi onde os alunos possuem acesso irrestrito as ferramentas de desenvolvimento Delphi que é o ambiente de desenvolvimento mais usado pelas empresas do sul de Minas Gerais.</p>
+
+                <h4 class="blue-text text-darken-3"><strong>P</strong>rogramas de Apoio Acadêmico</h4>
+                <p>Além dos cursos de Graduação, os alunos da Faceca contam com um programa contínuo de oferta de cursos de extensão e programas de aprimoramento profissional. O Curso de Gerenciamento de Carreiras, por exemplo, é um grande diferencial, ofertado somente pela Faculdade Cenecista de Varginha.</p>
+
+                <h4 class="blue-text text-darken-3"><strong>E</strong>ndereço e Horário de Funcionamento dos Cursos</h4>
+                <p><strong>Início das Aulas:</strong> 19 de fevereiro de 2018
+                <br>
+                <strong>Local:</strong> Faculdade Cenecista de Varginha – Rua Prof. Felipe Tiago Gomes, 173, Vila Bueno
+                <br>
+                <strong>Horário das aulas:</strong> Noturno: 19h15m às 22h00</p>
+
+                <!-- <h4 class="blue-text text-darken-3"><strong>B</strong>enefícios Financeiros</h4>
+                <p>Visando oportunizar o acesso de nossa comunidade ao Ensino Superior, oferecemos as seguintes modalidades de benefícios:</p>
+                Deixei comentado pois não sei quais são os benefícios financeiros ofertados pela FACECA!
+                -->
+            
         </div>
     </div>
 
