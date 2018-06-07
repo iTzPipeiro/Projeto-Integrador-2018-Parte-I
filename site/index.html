@@ -1,347 +1,342 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Sistemas de Informação</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" href="imagens\favicon4.ico">
-    <script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="shortcut icon" href="favicon4.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <title>Sistemas de Informação</title>
+
+                                    <!-- JAVASCRIPT  -->
+
+  <script>
         $(document).ready(function(){
-            $('.parallax').parallax();
-            $('.dropdown-trigger').dropdown();
+          $('.carousel').carousel();
+          $('.materialboxed').materialbox();
+          $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+          });
         });
-    </script>
-    <style>
-        #menu {
-            padding-left: 5px;
-        }
+  </script>
 
-        #paulocard {
-        	float: left;
-        	width: 321px;
-        }
+                                    <!-- CSS  -->
 
-        #thiagocard {
-        	margin-left: 1px;
-        	float: left;
-        	width: 321px;
+  <style>
+        #prof1 {
+          width: 300px;
         }
-
-        #marciocard {
-        	margin-left: 1px;
-        	float: left;
-        	width: 321px;
+        #prof2 {
+          width: 300px;
         }
+        #prof3 {
+          width: 300px;
+        }        
+  </style>
 
-        .card-content {
-        	height: 300px;
-        }
-
-        #cordenacaocard {
-            width: 800px;
-        }
-
-        .imgcord {
-            height: 450px;
-        }
-
-    </style>
 </head>
-<body>	
-    <div class="navbar-fixed">
-        <ul id="dropdown1" class="dropdown-content">
-          <li><a href="#!">one</a></li>
-          <li><a href="#!">two</a></li>
-          <li class="divider"></li>
-          <li><a href="#!">three</a></li>
-        </ul>    	
-	    <nav>
-	        <div class="nav-wrapper white" id="menu">
-	            <a href="index.html" class="brand-logo blue-text text-darken-3">SISTEMAS DE INFORMAÇÃO</a>  
-	            <ul class="right hide-on-med-and-down">
-	                <li><a href="#sobreocurso" class="modal-trigger blue-text text-darken-3">SOBRE O CURSO</a></li>
-	                <li><a href="#corpodocente" class="blue-text text-darken-3">CORPO DOCENTE</a></li>
-	                <li><a href="#mercadodetrabalho" class="blue-text text-darken-3">MERCADO DE TRABALHO</a></li>
-                    <li><a class="dropdown-trigger blue-text text-darken-3" href="#!" data-target="dropdown1">EXTRA<i class="material-icons right">arrow_drop_down</i></a></li>
-	            </ul>
-	        </div>
-	    </nav>
-    </div>
-   
-    <!-- SISTEMAS DE INFORMAÇÃO -->
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo"><img src="imagens/faceca.png" ></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
 
-    <div class="parallax-container">
-         <div class="parallax"><img src="imagens\faceca3.jpg"></div>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
-    <div class="section white">
-        <div class="row container">
-            <h2 class="header">Sistemas de Informação</h2>
-            <p class="black-text text-darken-3 lighten-3">Sistemas de Informação é o melhor curso da FACECA!</p>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">TÍTULO</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">TEXTO</h5>
         </div>
+        <br><br>
+
+      </div>
     </div>
-    
-    <!-- SOBRE O CURSO -->
+    <div class="parallax"><img src="imagens/bg3.jpg" alt="Unsplashed background img 1"></div>
+  </div>
 
-    <div class="parallax-container">
-        <div class="parallax"><img src="imagens\faceca5.jpg"></div>
+                                              <!-- SOBRE O CURSO -->
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Sobre o Curso</h4>
+          <p class="left-align light">O Bacharel em Sistemas de Informação é responsável pela administração do fluxo de informações
+             que circulam em Redes de Computadores em empresas. De acordo com as necessidades de cada empresa e seus usuários de tecnologia
+             da informação, este profissional atua no desenvolvimento de softwares. Este profissional também cuida da funcionalidade de sites, 
+             garantindo que as informações possam ser acessadas de forma correta e organizada. O Analista de Sistemas também pode atuar na área
+              de suporte técnico, realizando manutenções de sistemas, banco de dados e redes de computadores. Contudo, o profissional poderá atuar em
+               empresas de diversos segmentos de negócios.</p>
+        </div>
+      </div>
+                
     </div>
-    <a name="sobreocurso"></a>
-    <div class="section white">  
-        <div class="row container">
-            <h2 class="header blue-text text-darken-3">Sobre o curso</h2>
-            <p class="black-text text-darken-3 lighten-3">Sistemas de Informação é o melhor curso da FACECA!</p>
-            	<li>
-                    <strong>Modalidade:</strong> 
-                    Bacharelado
-                </li> 
-                <li>
-                    <strong>Carga Horária:</strong>
-                    3.000 Horas
-                </li>
-                <li>
-                    <strong>Duração di Curso::</strong>
-                    8 Semestres
-                </li>
-                <li>
-                    <strong>Turno:</strong>
-                    Noturno
-                </li>  
-                <li>
-                    <strong>E-mail:</strong>
-                    1916.paulomendes@cnec.br
-                </li>             
-                <li>
-                    <strong>Ato Autorizativo:</strong>
-                    Ato de Renovação de Reconhecimento – Portaria Nº 1.092 - D.O.U 30/12/2015
-                </li>
-                <li>
-                    <strong>Vagas:</strong>
-                    80
-                </li>
+  </div>
 
-                <h4 class="blue-text text-darken-3"><strong>A</strong> profissão</h4>
 
-                <p id="paprofissao">O Bacharel em Sistemas de Informação é responsável pela administração do fluxo de informações que circulam em Redes de Computadores em empresas. De acordo com as necessidades de cada empresa e seus usuários de tecnologia da informação, este profissional atua no desenvolvimento de softwares. Este profissional também cuida da funcionalidade de sites, garantindo que as informações possam ser acessadas de forma correta e organizada. O Analista de Sistemas também pode atuar na área de suporte técnico, realizando manutenções de sistemas, banco de dados e redes de computadores. Contudo, o profissional poderá atuar em empresas de diversos segmentos de negócios.</p>
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">TEXTO</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="imagens/bg5.jpg" alt="Unsplashed background img 2"></div>
+  </div>
 
-                <h4 class="blue-text text-darken-3"><strong>M</strong>ercado de Trabalho</h4>
 
-                <p id="pmercadodetrabalho">Hoje no Brasil o mercado para o profissional em Sistemas de Informação emprega 1,3 milhão de pessoas e, de acordo com a Associação Brasileira de Empresas de Tecnologia da Informação e Comunicação, 50 mil postos de trabalho estão esperando por um profissional qualificado. A expectativa é que nos próximos anos o Brasil vá precisar de mais de 750 mil profissionais de tecnologia. Afinal, a tecnologia da informação transformou nossos hábitos sociais, muitos serviços que antes realizávamos pessoalmente, hoje podemos executá-los através de sites e aplicativos. A tecnologia faz as pessoas resolverem problemas de formas diferentes, criativas, ou seja, inventando soluções.</p>
+                                              <!-- CORPO DOCENTE -->
 
-                <h4 class="blue-text text-darken-3"><strong>P</strong>or que estudar na Faceca?</h4>
-
-                <p>- Temos o melhor Corpo docente da Região: O corpo docente da Faceca é composto por mestres e doutores atuantes no mercado de trabalho e com vasta experiência profissional.</p>
-
-                <p>- Aqui,  teoria e prática Caminham juntas:  O projeto integrador é um trabalho desenvolvido com o objetivo de integrar as disciplinas estudadas no período atual, revisitando os períodos anteriores, permitindo, assim, a prática dos conteúdos e contato direto com a realidade do mercado de trabalho, preparando melhor o aluno para o desempenho de sua profissão.</p>
-
-                <p>- Temos fácil acesso: Localização Privilegiada próximo às entradas da cidade, rodoviária, Centro e Shopping.</p>
-
-                <p>- Somos, com orgulho, a Faculdade que mais emprega na região: A Faceca é única instituição da região que possui Agência de Empregos resultante de um convênio com o Conselho Regional de Administração, prestando serviço de recrutamento  e seleção de funcionários para as principais empresas do Sul de Minas. Em 2016 foram 141 vagas divulgadas aos alunos do Curso de Administração.</p>
-
-                <p>- A oferta de vagas também compreende egressos e comunidade.</p>
-
-                <p>- A Faculdade conta com o seu Núcleo de Negócios, instância que contempla, inclusive, a Casa do Administrador, instalada em parceria com o Conselho Regional de Administração de Minas Gerais.</p>
-
-                <p>- É a única Instituição de Ensino que oferece projeto de Gerenciamento de Carreiras e palestras/oficinas realizadas semanalmente, objetivando a qualificação constante de alunos, ex-alunos e profissionais da área.</p>
-
-                <p>-  Transferência facilitada entre as 18 unidades de Ensino Superior da CNEC no Brasil.</p>
-
-                <p>- Oferecemos Nivelamento Acadêmico Gratuito: Aos alunos que possuem dificuldade em algum conteúdo da educação básica, ou para aqueles que querem aperfeiçoar algum ponto ou rever conteúdo, oferecemos disciplinas de nivelamento gratuitamente.</p>
-
-                <p>- Quer aprender mais? Ofertamos cursos de Extensão Universitária para que você possa aprimorar cada dia mais seu perfil profissional.</p>
-
-                <p>- Aqui sua amizade vale desconto com o programa mais que amigo. A cada novo amigo indicado matriculado você ganha 10% de desconto, podendo chegar a 100%.</p>
-
-                <p>- Quer FIES ou PROUNI, aqui também tem!</p>
-
-                <p>- Financiamento Próprio a Juros 0%: Com o FIESCNEC é possível financiar até 50%.</p>
-
-                <p>- Temos também, parceria com diversas empresas, câmara municipais, associações comerciais e órgãos públicos com a finalidade de oportunizar descontos e benefícios exclusivos.</p>
-
-                <p>Faceca a faculdade que acredita no ser!</p>
-
-                <h4 class="blue-text text-darken-3"><strong>C</strong>ordenação do Curso</h4>
-
-                <div class="row">
-                    <div class="col s12 m7" id="cordenacaocard">
-                      <div class="card horizontal">
-                        <div class="card-image">
-                          <img src="imagens/paulo.jpg" class="imgcord">
-                          <span class="card-title">Paulo Roberto</span>
-                        </div>
-                        <div class="card-content">
-                          <p id="pcordenacao">Olá! Sou Paulo Roberto Moreira Mendes e atuo no curso de Sistemas de Informação como Coordenador e Docente. Sou formado em Sistemas de Informação pela CNEC/FACECA. Fiz pós-graduação em Redes de Computadores e estou Mestrando em Ciências da Linguagem pela UNIVÁS. Atuei nas empresas Américo Contabilidade como Analista de Suporte e Administrador de Redes de Computadores. Presto consultoria em Tecnologia da Informação principalmente em escritórios contábeis em nossa região.<br>
-                          Caso queira falar comigo estou na instituição nos seguintes dias:
-                          <br>
-                          <li>Segunda-Feira: 19h as 21h</li>
-                          
-                          <li>Terça-Feira: 17h as 19h</li>
-                          
-                          <li>Quarta-Feira: 20h40 as 22h</li>
-                          
-                          <li>Quinta-Feira: 18h as 19h e 20h40 as 22h</li>
-                          
-                          <li>Sexta-Feira: 19h as 21h</li>
-                          
-                          Você pode agendar para falar comigo pessoalmente ou tirar dúvidas pelos seguintes contatos:
-                          <br>  
-                          <strong>E-mail:</strong> 1916.paulomendes@cnec.br
-                          <br>
-                          <strong>Telefone:</strong> (35) 3690-8926
-                          <br>
-                          <strong>Whatsapp:</strong> (35) 9 99881-8597
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+  <div class="container">
+    <div class="section">
+      <h3><i class="mdi-content-send brown-text"></i></h3>
+        <h4 class="center">Corpo Docente</h4>
+        <div class="row">
+            <div class="col s12 m7" id="prof1">
+              <div class="card">
+                <div class="card-image">
+                  <img src="imagens/marcio.jpg">
+                  <span class="card-title"></span>
                 </div>
+                <div class="card-content">
+                  <p>Prof. Márcio Henrique, Gerente de TI das Lojas Edmil S/A.</p>
+                </div>
+              </div>
+            </div>
 
-                <h4 class="blue-text text-darken-3"><strong>C</strong>omo faço para Ingressar na Faceca?</h4>
-                <p>Para maiores informações sobre como ingressar na Faceca, acesse <a href="http://faceca.cnec.br/informacoes/formas-de-ingresso/">FORMAS DE INGRESSO</a></p>
+            <div class="col s12 m7" id="prof2">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="imagens/paulo.jpg">
+                    <span class="card-title"></span>
+                  </div>
+                  <div class="card-content">
+                    <p>Prof. Paulo Roberto, Coord. do curso de Sistemas de Informação.</p>
+                  </div>
+                </div>
+              </div>
 
-                <h4 class="blue-text text-darken-3"><strong>E</strong>strutura Curricular</h4>
-                <p>As estruturas curriculares dos cursos Superiores de Tecnologia e Graduação, estão em consonância com o Catálogo Nacional de Cursos Superiores de Tecnologia e com Diretrizes Curriculares Nacionais.
-                <br>
-                <a href="http://faceca.cnec.br/wp-content/uploads/sites/19/2015/05/Estrutura-Curricular-Sistemas-de-Informa%C3%A7%C3%A3o.pdf">Clique aqui</a> para acessar a estrutura curricular deste curso.</p>
+              <div class="col s12 m7" id="prof3">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="imagens/thiago.jpg">
+                      <span class="card-title"></span>
+                    </div>
+                    <div class="card-content">
+                      <p>Prof. Thiago Giovanella, Gerente de TI da Rede GF Supermercados.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
 
-                <h4 class="blue-text text-darken-3"><strong>E</strong>strutura Física</h4>
-                <p>A FACECA dispõe de estrutura própria que possibilita a aplicação da teoria vivenciada em sala de aula às experiências práticas que sustentam uma atuação de excelência no mercado de trabalho. A Biblioteca de nossa Instituição é uma das melhores do Sul de Minas e recebeu conceito 5 na última avaliação do MEC. A estrutura conta também com 5 laboratórios de informática, Laboratórios de Química, Física, Eletricidade Aplicada, Segurança do Trabalho, Núcleo Contábil de apoio tributário, fiscal e contábil à Sociedade. Núcleo de Práticas Jurídicas, Escritório de Assistência Jurídica à Comunidade. É a única instituição do Sul de Minas que sedia o Centro Judiciário de Solução de Conflitos em parceria com o TJMG e o Conselho Regional de Administração, parceria que oportunizou a criação da Agência de Empregos vinculada ao CRA e Casa do Administrador.</p>
-                <p>No curso de Sistemas de Informação temos disponível um laboratório exclusivo de Redes de Computadores, que dispõe de ferramentas para suportar as disciplinas de Redes de Computadores, Sistemas Distribuídos, Sistemas Operacionais e Auditoria e Segurança de Sistemas. A Instituição possui além disso uma parceria com a Embarcadero/Delphi onde os alunos possuem acesso irrestrito as ferramentas de desenvolvimento Delphi que é o ambiente de desenvolvimento mais usado pelas empresas do sul de Minas Gerais.</p>
+          </div>
+                
+    </div>
+  </div>
 
-                <h4 class="blue-text text-darken-3"><strong>P</strong>rogramas de Apoio Acadêmico</h4>
-                <p>Além dos cursos de Graduação, os alunos da Faceca contam com um programa contínuo de oferta de cursos de extensão e programas de aprimoramento profissional. O Curso de Gerenciamento de Carreiras, por exemplo, é um grande diferencial, ofertado somente pela Faculdade Cenecista de Varginha.</p>
 
-                <h4 class="blue-text text-darken-3"><strong>E</strong>ndereço e Horário de Funcionamento dos Cursos</h4>
-                <p><strong>Início das Aulas:</strong> 19 de fevereiro de 2018
-                <br>
-                <strong>Local:</strong> Faculdade Cenecista de Varginha – Rua Prof. Felipe Tiago Gomes, 173, Vila Bueno
-                <br>
-                <strong>Horário das aulas:</strong> Noturno: 19h15m às 22h00</p>
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">TEXTO</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="imagens/faceca3.JPG" alt="Unsplashed background img 3"></div>
+  </div>
 
-                <!-- <h4 class="blue-text text-darken-3"><strong>B</strong>enefícios Financeiros</h4>
-                <p>Visando oportunizar o acesso de nossa comunidade ao Ensino Superior, oferecemos as seguintes modalidades de benefícios:</p>
-                Deixei comentado pois não sei quais são os benefícios financeiros ofertados pela FACECA!
-                -->
+                                              <!-- POR QUE ESTUDAR NA FACECA? -->
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Por que estudar na Faceca?</h4>
+          <p class="left-align light">Aqui, teoria e prática Caminham juntas: O projeto integrador é um trabalho desenvolvido com o objetivo de integrar as disciplinas estudadas no período atual, revisitando os períodos anteriores, permitindo, assim, a prática dos conteúdos e contato direto com a realidade do mercado de trabalho, preparando melhor o aluno para o desempenho de sua profissão.
+            Temos fácil acesso: Localização Privilegiada próximo às entradas da cidade, rodoviária, Centro e Shopping.
+            Somos, com orgulho, a Faculdade que mais emprega na região: A Faceca é única instituição da região que possui Agência de Empregos resultante de um convênio com o Conselho Regional de Administração, prestando serviço de recrutamento e seleção de funcionários para as principais empresas do Sul de Minas. Em 2016 foram 141 vagas divulgadas aos alunos do Curso de Administração.<br><br>
             
+            A Faculdade conta com o seu Núcleo de Negócios, instância que contempla, inclusive, a Casa do Administrador, instalada em parceria com o Conselho Regional de Administração de Minas Gerais.
+            É a única Instituição de Ensino que oferece projeto de Gerenciamento de Carreiras e palestras/oficinas realizadas semanalmente, objetivando a qualificação constante de alunos, ex-alunos e profissionais da área.
+            Aqui sua amizade vale desconto com o programa mais que amigo. A cada novo amigo indicado matriculado você ganha 10% de desconto, podendo chegar a 100%.
+            Quer FIES ou PROUNI, aqui também tem!
+            Financiamento Próprio a Juros 0%: Com o FIESCNEC é possível financiar até 50%.
+            Temos também, parceria com diversas empresas, câmara municipais, associações comerciais e órgãos públicos com a finalidade de oportunizar descontos e benefícios exclusivos.</p>
         </div>
+      </div>
+                
     </div>
+  </div>
 
-    <!-- CORPO DOCENTE -->
-
-    <div class="parallax-container">
-        <div class="parallax"><img src="imagens\faceca3.jpg"></div>
-    </div>
-    <a name="corpodocente"></a>
-    <div class="section white">  
-        <div class="row container">
-            <h2 class="header blue-text text-darken-3">Corpo Docente</h2>
-            <div class="row">
-                <div class="col s12 m7" id="paulocard">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="imagens/paulo.jpg">
-                            <span class="card-title text-align: center">Paulo Roberto</span>
-                        </div>
-                        <div class="card-content">
-                            <div class="docente">
-                            <p> <strong>Titulação:</strong> Especialização / Pós-Graduação </p>
-                            <p> <strong>Graduação:</strong> Sistemas de Informação </p>
-                            <p> <strong>Pós-Graduação:</strong> Rede de Computadores </p>
-                            <p> <strong>Cursos de Atuação:</strong> Administração, Análise e Desenvolvimento de Sistemas, Sistemas de Informação </p>
-                            <p> <strong>Regime de Trabalho:</strong> Parcial </p>
-                            <p> <strong>CV Lattes:</strong> <a href="http://lattes.cnpq.br/7454085616124049"> Clique aqui </a> </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m7" id="thiagocard">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="imagens/thiago.jpg">
-                            <span class="card-title text-align: center">Thiago Giovanella</span>
-                        </div>
-                        <div class="card-content">
-                            <div class="docente">
-                            <p> <strong>Titulação:</strong> Especialização / Pós-Graduação </p>
-                            <p> <strong>Graduação:</strong> Ciências da Computação </p>
-                            <p> <strong>Pós-Graduação:</strong> MBA em Gestão de Projetos </p>
-                            <p> <strong>Cursos de Atuação:</strong> Administração, Análise e Desenvolvimento de Sistemas, Sistemas de Informação </p>
-                            <p> <strong>Regime de Trabalho:</strong> Parcial </p>
-                            <p> <strong>CV Lattes:</strong> <a href="http://lattes.cnpq.br/4647304749509545"> Clique aqui </a> </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m7" id="marciocard">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="imagens/marcio.jpg">
-                            <span class="card-title text-align: center">Márcio Henrique</span>
-                        </div>
-                        <div class="card-content">
-                            <div class="docente">
-                            <p> <strong>Titulação:</strong> Mestrado </p>
-                            <p> <strong>Graduação:</strong> Sistemas de Informação </p>
-                            <p> <strong>Pós-Graduação:</strong> Engenharia de Sistemas </p>
-                            <p> <strong>Mestrado:</strong> Desenvolvimento Sustentável e Qualidade de Vida </p>
-                            <p> <strong>Cursos de Atuação:</strong> Administração, Análise e Desenvolvimento de Sistemas, Sistemas de Informação </p>
-                            <p> <strong>Regime de Trabalho:</strong> Parcial </p>
-                            <p> <strong>CV Lattes:</strong> <a href="http://lattes.cnpq.br/6994378285610835"> Clique aqui </a> </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>            
-        	</div>
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">TEXTO</h5>
         </div>
+      </div>
     </div>
+    <div class="parallax"><img src="imagens/biblioteca1.jpg" alt="Unsplashed background img 3"></div>
+  </div>
 
-    <!-- MERCADO DE TRABALHO -->
+                                                        <!-- BIBLIOTECA -->
 
-    <div class="parallax-container">
-        <div class="parallax"><img src="imagens\faceca5.jpg"></div>
-    </div>
-    <a name="mercadodetrabalho"></a>
-    <div class="section white">  
-        <div class="row container">
-            <h2 class="header">Mercado de Trabalho</h2>
-            <p class="black-text text-darken-3 lighten-3">Sistemas de Informação é o melhor curso da FACECA!</p>
-        </div>
-    </div>
-
-    <div class="parallax-container">
-        <div class="parallax"><img src="imagens\faceca3.jpg"></div>
-    </div>
-
-    <!-- RODAPÉ -->
-
-    <footer class="page-footer blue darken-3">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Footer Content</h5>
-              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Biblioteca "Ruy Sebastião das Neves"</h4>
+          <p class="left-align light">
+            A Biblioteca “Ruy Sebastião das Neves” destina-se a disponibilizar ao corpo docente, discente e técnico-administrativo da Faculdade Cenecista de Varginha - FACECA, recursos bibliográficos, informacionais e tecnológicos, necessários ao desenvolvimento dos programas de ensino, pesquisa e extensão. O acervo é composto por livros, periódicos científicos e informativos, jornais, materiais áudio visuais (Cd’s e Dvd’s), Trabalhos de Conclusão de Curso e outros que vierem a ser incorporados à coleção.
+            <br>
+            A Biblioteca disponibiliza de 08 (oito) computadores (sendo um reservado para deficiente visual), conectados à internet para auxílio à pesquisa, trabalhos extraclasse, bem como atividades de interesse do usuário.
+            O usuário tem livre acesso às estantes e as áreas reservadas para estudo, que são compostas por um total de 18 mesas e 80 cadeiras, distribuídos em 03 (três) cabines para estudo em grupo, 01 (uma) sala com equipamentos de áudio e vídeo (televisão, aparelho de DVD e aparelho de VHS) e a área de estudo em comum.
+          </p>
+            <div class="carousel">
+              <a class="carousel-item" href="#one!"><img class="materialboxed" width="250" src="imagens/biblioteca1.jpg"></a>
+              <a class="carousel-item" href="#two!"><img class="materialboxed" width="250" src="imagens/biblioteca2.jpg"></a>
+              <a class="carousel-item" href="#three!"><img class="materialboxed" width="250" src="imagens/biblioteca3.jpg"></a>
+              <a class="carousel-item" href="#four!"><img class="materialboxed" width="250" src="imagens/biblioteca4.jpg"></a>
+              <a class="carousel-item" href="#five!"><img class="materialboxed" width="250" src="imagens/biblioteca5.jpg"></a>
             </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Links</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-              </ul>
+        </div>
+      </div>
+                
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">TEXTO</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="imagens/laboratorio3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+                                                        <!-- INFRAESTRUTURA -->
+
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 center">
+            <h3><i class="mdi-content-send brown-text"></i></h3>
+            <h4>Infraestrutura</h4>
+            <p class="left-align light">
+              A Biblioteca “Ruy Sebastião das Neves” destina-se a disponibilizar ao corpo docente, discente e técnico-administrativo da Faculdade Cenecista de Varginha - FACECA, recursos bibliográficos, informacionais e tecnológicos, necessários ao desenvolvimento dos programas de ensino, pesquisa e extensão. O acervo é composto por livros, periódicos científicos e informativos, jornais, materiais áudio visuais (Cd’s e Dvd’s), Trabalhos de Conclusão de Curso e outros que vierem a ser incorporados à coleção.
+              <br>
+              A Biblioteca disponibiliza de 08 (oito) computadores (sendo um reservado para deficiente visual), conectados à internet para auxílio à pesquisa, trabalhos extraclasse, bem como atividades de interesse do usuário.
+              O usuário tem livre acesso às estantes e as áreas reservadas para estudo, que são compostas por um total de 18 mesas e 80 cadeiras, distribuídos em 03 (três) cabines para estudo em grupo, 01 (uma) sala com equipamentos de áudio e vídeo (televisão, aparelho de DVD e aparelho de VHS) e a área de estudo em comum.
+            </p>
+
+            <div class="carousel carousel-slider center">
+              <!--<div class="carousel-fixed-item center">
+                <a class="btn waves-effect white grey-text darken-text-2">button</a>
+              </div>-->
+              <div class="carousel-item red white-text" href="#one!">
+                <!--<h2>First Panel</h2>
+                <p class="white-text">This is your first panel</p>-->
+                <img src="imagens/laboratorio2.jpg">
+              </div>
+              <div class="carousel-item amber white-text" href="#two!">
+                <!--<h2>Second Panel</h2>
+                <p class="white-text">This is your second panel</p>-->
+                <img src="imagens/laboratorio2.jpg">
+              </div>
+              <div class="carousel-item green white-text" href="#three!">
+                <!--<h2>Third Panel</h2>
+                <p class="white-text">This is your third panel</p>-->
+                <img src="imagens/laboratorio2.jpg">
+              </div>
+              <div class="carousel-item blue white-text" href="#four!">
+                <!--<h2>Fourth Panel</h2>
+                <p class="white-text">This is your fourth panel</p>-->
+                <img src="imagens/laboratorio2.jpg">
+              </div>
             </div>
+
           </div>
+        </div>                
+      </div>
+    </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">TEXTO</h5>
         </div>
-        <div class="footer-copyright">
-          <div class="container">
-          © 2018 Copyright Text
-          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-          </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="imagens/faceca5.JPG" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Endereço e Horário de Funcionamento dos Cursos</h5>
+          <p class="grey-text text-lighten-4">Início das Aulas: 19 de fevereiro de 2018 <br>
+              Local: Faculdade Cenecista de Varginha – Rua Prof. Felipe Tiago Gomes, 173, Vila Bueno <br>
+              Horário das aulas: Noturno: 19h15m às 22h00</p>
+
+
         </div>
-      </footer> 
-</body>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Feito por<a class="brown-text text-lighten-3" href="http://materializecss.com"> Anderson,Jonas e Matheus</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
 </html>
