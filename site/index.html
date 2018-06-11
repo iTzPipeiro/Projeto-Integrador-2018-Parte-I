@@ -37,7 +37,17 @@
         }
         #prof3 {
           width: 300px;
-        }   
+        } 
+        #inscrevase{
+          position: fixed;
+          float: bottom;
+          bottom: 15px;
+          left: 15px;
+          z-index: 100;
+        }  
+        #banner-principal{
+          max-height: 300px;
+        }
   </style>
 
 </head>
@@ -57,7 +67,7 @@
     </div>
   </nav>
 
-  <div id="index-banner" class="parallax-container">
+  <div id="index-banner" >
     <!-- <div class="section no-pad-bot"> -->
       <!-- <div class="container"> -->
         <!-- <br><br>
@@ -66,7 +76,7 @@
           <h5 class="header col s12 light">TEXTO</h5>
         </div>
         <br><br> -->
-        <div class="carousel carousel-slider center" data-indicators="true">        
+        <div class="carousel carousel-slider center" data-indicators="true" id="banner-principal">        
         <div class="carousel-item red white-text" href="#one!">
           <h2>First Panel</h2>
           <p class="white-text">This is your first panel</p>
@@ -324,12 +334,17 @@
         </div>                
       </div>
     </div>
-    <!-- BOTAAAO -->
+    <!-- BOTÃO VOLTAR AO TOPO -->
     <div class="fixed-action-btn">
       <a class="btn-floating btn-small grey lighten-3" href="#inicio">
         <i class="large material-icons grey-text text-darken-1">arrow_upward</i>
       </a>
     </div>
+
+    <!-- BOTÃO INSCREVA-SE -->
+
+    <a class="waves-effect waves-light btn-small pulse yellow blue-text text-darken-4" id="inscrevase" href="http://faceca.cnec.br/curso/bacharelado-em-sistemas-de-informacao/" target="_blank"><!--<i class="material-icons">menu</i>-->INSCREVA-SE</a>
+        
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
