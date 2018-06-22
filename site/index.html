@@ -22,8 +22,9 @@
             fullWidth: true,
             indicators: true
           });
-          $('.collapsible').collapsible();
+          $('.collapsible').collapsible();          
         });
+        M.toast({html: '(35) 9 8401-6422'})
   </script>
 
                                     <!-- CSS  -->
@@ -47,6 +48,10 @@
         }  
         #banner-principal{
           max-height: 300px;
+        }
+        .miniatura-social{
+          height: 32px;
+          width: 32px;
         }
   </style>
 
@@ -357,7 +362,7 @@
     <div class="parallax"><img src="imagens/faceca5.JPG" alt="Unsplashed background img 3"></div>
   </div>
 
-  <footer class="page-footer teal">
+  <footer class="page-footer blue">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -369,15 +374,24 @@
 
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5 class="white-text">Mídias Sociais</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li>
+              <a class="white-text" href="https://www.facebook.com/cnecfacecavarginha/" target="_blank"><img class="miniatura-social" src="imagens/facebook.png"></a>
+            </li>
+            <li>
+              <a class="white-text" href="https://www.instagram.com/facecacnec/?hl=pt-br" target="_blank"><img class="miniatura-social" src="imagens/instagram.png"></a>
+            </li>
+            <li>
+              <a class="white-text" href="https://twitter.com/cneceducacao" target="_blank"><img class="miniatura-social" src="imagens/twitter.png"></a>
+            </li>
+            <li>
+              <a onclick="M.toast({html: '(35) 9 8401-6422'})"><img class="miniatura-social" src="imagens/whatsapp.png"></a>
+              <!--<a onclick="M.toast({html: 'I am a toast'})" class="btn">Toast!</a>-->
+            </li>
           </ul>
         </div>
-        <div class="col l3 s12">
+        <!--<div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
             <li><a class="white-text" href="#!">Link 1</a></li>
@@ -385,7 +399,7 @@
             <li><a class="white-text" href="#!">Link 3</a></li>
             <li><a class="white-text" href="#!">Link 4</a></li>
           </ul>
-        </div>
+        </div>-->
       </div>
     </div>
     <div class="footer-copyright">
